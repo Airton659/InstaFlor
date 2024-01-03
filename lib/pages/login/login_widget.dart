@@ -194,9 +194,9 @@ class _LoginWidgetState extends State<LoginWidget>
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8.0),
                         child: Image.asset(
-                          'assets/images/default_765x625.png',
-                          width: 300.0,
-                          height: 200.0,
+                          'assets/images/facebook_profile_1000x1000.png',
+                          width: double.infinity,
+                          height: double.infinity,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -206,13 +206,14 @@ class _LoginWidgetState extends State<LoginWidget>
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                       child: Text(
-                        'Login',
+                        'InstaFlor',
                         style:
                             FlutterFlowTheme.of(context).headlineSmall.override(
-                                  fontFamily: 'Plus Jakarta Sans',
+                                  fontFamily: 'Flor5',
                                   color: const Color(0xFFFFD0D0),
-                                  fontSize: 22.0,
-                                  fontWeight: FontWeight.bold,
+                                  fontSize: 50.0,
+                                  fontWeight: FontWeight.normal,
+                                  useGoogleFonts: false,
                                 ),
                       ).animateOnPageLoad(
                           animationsMap['textOnPageLoadAnimation1']!),
