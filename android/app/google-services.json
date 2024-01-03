@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992021104583",
+    "project_id": "instaflor-23bc3",
+    "storage_bucket": "instaflor-23bc3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992021104583:android:dac79fd60240412c3f3be2",
+        "android_client_info": {
+          "package_name": "com.mycompany.instaflor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6wEa3tBwHffUHAopX4c2hK6QmxQUcCm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
