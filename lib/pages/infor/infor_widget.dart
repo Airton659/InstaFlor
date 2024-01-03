@@ -2,7 +2,9 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'infor_model.dart';
@@ -29,6 +31,11 @@ class _InforWidgetState extends State<InforWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => InforModel());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      await actions.lockOrientation();
+    });
   }
 
   @override

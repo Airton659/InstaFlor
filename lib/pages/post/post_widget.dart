@@ -5,7 +5,9 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'post_model.dart';
@@ -27,6 +29,11 @@ class _PostWidgetState extends State<PostWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => PostModel());
+
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      await actions.lockOrientation();
+    });
 
     _model.nomeController ??= TextEditingController();
     _model.nomeFocusNode ??= FocusNode();
