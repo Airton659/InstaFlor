@@ -82,7 +82,7 @@ class _ListaWidgetState extends State<ListaWidget> {
                 size: 30.0,
               ),
               onPressed: () async {
-                context.pop();
+                context.pushNamed('Home');
               },
             ),
             title: Text(

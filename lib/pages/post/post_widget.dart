@@ -86,7 +86,7 @@ class _PostWidgetState extends State<PostWidget> {
               size: 30.0,
             ),
             onPressed: () async {
-              context.pop();
+              context.pushNamed('Home');
             },
           ),
           title: Text(
@@ -278,14 +278,14 @@ class _PostWidgetState extends State<PostWidget> {
                                         color: Color(0xFFEE7070),
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: const BorderSide(
                                         color: Color(0xFF4B39EF),
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -293,7 +293,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -301,7 +301,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                   ),
                                   style: FlutterFlowTheme.of(context)
@@ -337,7 +337,7 @@ class _PostWidgetState extends State<PostWidget> {
                                         color: Color(0xFFEE7070),
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -345,7 +345,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             .primary,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -353,7 +353,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -361,7 +361,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                   ),
                                   style: FlutterFlowTheme.of(context)
@@ -398,7 +398,7 @@ class _PostWidgetState extends State<PostWidget> {
                                         color: Color(0xFFEE7070),
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -406,7 +406,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             .primary,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     errorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -414,7 +414,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                     focusedErrorBorder: OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -422,7 +422,7 @@ class _PostWidgetState extends State<PostWidget> {
                                             FlutterFlowTheme.of(context).error,
                                         width: 2.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(0.0),
+                                      borderRadius: BorderRadius.circular(8.0),
                                     ),
                                   ),
                                   style: FlutterFlowTheme.of(context)

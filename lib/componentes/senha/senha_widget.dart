@@ -99,33 +99,53 @@ class _SenhaWidgetState extends State<SenhaWidget> {
                                   fontSize: 14.0,
                                   fontWeight: FontWeight.w500,
                                 ),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                        enabledBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(
                             color: Color(0xFFEE7070),
                             width: 2.0,
                           ),
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(25.0),
+                            bottomRight: Radius.circular(25.0),
+                            topLeft: Radius.circular(25.0),
+                            topRight: Radius.circular(25.0),
+                          ),
                         ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                        focusedBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(
                             color: Color(0xFF4B39EF),
                             width: 2.0,
                           ),
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(25.0),
+                            bottomRight: Radius.circular(25.0),
+                            topLeft: Radius.circular(25.0),
+                            topRight: Radius.circular(25.0),
+                          ),
                         ),
-                        errorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                        errorBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(
                             color: Color(0xFFFF5963),
                             width: 2.0,
                           ),
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(25.0),
+                            bottomRight: Radius.circular(25.0),
+                            topLeft: Radius.circular(25.0),
+                            topRight: Radius.circular(25.0),
+                          ),
                         ),
-                        focusedErrorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
+                        focusedErrorBorder: const OutlineInputBorder(
+                          borderSide: BorderSide(
                             color: Color(0xFFFF5963),
                             width: 2.0,
                           ),
-                          borderRadius: BorderRadius.circular(25.0),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(25.0),
+                            bottomRight: Radius.circular(25.0),
+                            topLeft: Radius.circular(25.0),
+                            topRight: Radius.circular(25.0),
+                          ),
                         ),
                         filled: true,
                         fillColor: Colors.white,
