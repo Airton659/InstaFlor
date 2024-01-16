@@ -454,9 +454,14 @@ class _ListaWidgetState extends State<ListaWidget> {
                                                                   0.0),
                                                       child: Text(
                                                         dateTimeFormat(
-                                                            'd/M/y',
-                                                            listViewFotosRecord
-                                                                .data!),
+                                                          'd/M/y',
+                                                          listViewFotosRecord
+                                                              .data!,
+                                                          locale:
+                                                              FFLocalizations.of(
+                                                                      context)
+                                                                  .languageCode,
+                                                        ),
                                                         textAlign:
                                                             TextAlign.start,
                                                         style:
@@ -719,9 +724,13 @@ class _ListaWidgetState extends State<ListaWidget> {
                                                                       0.0),
                                                           child: Text(
                                                             dateTimeFormat(
-                                                                'dd/MM/y',
-                                                                searchResultItem
-                                                                    .data!),
+                                                              'dd/MM/y',
+                                                              searchResultItem
+                                                                  .data!,
+                                                              locale: FFLocalizations
+                                                                      .of(context)
+                                                                  .languageCode,
+                                                            ),
                                                             textAlign:
                                                                 TextAlign.start,
                                                             style: FlutterFlowTheme

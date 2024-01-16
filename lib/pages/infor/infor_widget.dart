@@ -181,7 +181,12 @@ class _InforWidgetState extends State<InforWidget> {
                                   ),
                             ),
                             Text(
-                              dateTimeFormat('dd/MM/y', widget.informa!.data!),
+                              dateTimeFormat(
+                                'dd/MM/y',
+                                widget.informa!.data!,
+                                locale:
+                                    FFLocalizations.of(context).languageCode,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
